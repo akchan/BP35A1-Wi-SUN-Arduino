@@ -79,7 +79,7 @@ CollectionDay::CollectionDay(std::string data)
 
 InstantaneousPower::InstantaneousPower(std::string data)
 {
-  _power = strtol(data.c_str(), NULL, 16);
+  _power = static_cast<int>(strtoul(data.c_str(), NULL, 16));
 }
 
 InstantaneousAmperage::InstantaneousAmperage(std::string data)
